@@ -1,0 +1,33 @@
+.granting-section {
+  padding-bottom: 94px;
+}
+
+.granting {
+  display: flex;
+  padding-left: 0;
+}
+
+.granting li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.granting-items {
+  position: relative;
+}
+
+.granting-items-text {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
