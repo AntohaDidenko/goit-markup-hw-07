@@ -1,4 +1,4 @@
-.button {
+.hero__button {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -11,11 +11,10 @@
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: box-shadow var(--time-animation) var(--time-distribution-function);
-}
-
-.button:hover,
-.button:focus {
-  box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .hero {
@@ -36,7 +35,7 @@
   background-size: cover;
 }
 
-.header-hero {
+.hero__heading {
   margin-bottom: 30px;
   color: var(--button-color);
   font-weight: 900;

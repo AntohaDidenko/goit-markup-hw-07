@@ -1,21 +1,20 @@
-.clients-section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.items-clients {
+.clients__items {
   color: var(--svg-color);
+  &:not(:last-child) {
+    flex-basis: calc(100% * 6 - 30px);
+  }
 }
 
-.items-clients:not(:last-child) {
-  flex-basis: calc(100% * 6 - 30px);
-}
-
-.anchor-clients {
+.clients__link {
   display: block;
   width: 170px;
   height: 92px;
@@ -26,14 +25,13 @@
   color: inherit;
   transition: color var(--time-animation) var(--time-distribution-function),
     border var(--time-animation) var(--time-distribution-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+  }
 }
 
-.anchor-clients:hover,
-.anchor-clients:focus {
-  color: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
-}
-
-.icon-group {
+.clients__icon {
   fill: currentColor;
 }

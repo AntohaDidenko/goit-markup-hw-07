@@ -1,21 +1,20 @@
-.granting-section {
+.granting {
   padding-bottom: 94px;
 }
 
-.granting {
+.granting__list {
   display: flex;
   padding-left: 0;
 }
 
-.granting li:not(:first-child) {
-  margin-left: 30px;
-}
-
-.granting-items {
+.granting__items {
   position: relative;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
-.granting-items-text {
+.granting__text {
   position: absolute;
   display: flex;
   width: 100%;
